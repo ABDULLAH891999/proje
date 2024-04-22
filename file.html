@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather & Currency Exchange</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Weather & Currency Exchange</h1>
+  </header>
+
+  <main>
+    <section class="weather">
+      <h2>Weather Today</h2>
+      <img src="weather-icon.png" alt="Weather Icon">
+      <p id="weather-description">Clear skies and sunny!</p>
+      <p id="weather-details">Temperature: 25°C</p>
+    </section>
+
+    <section class="currency">
+      <h2>Currency Exchange</h2>
+      <select id="from-currency">
+        <option value="USD">USD - US Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="TL">Lira - Turk Lirasi</option>
+      </select>
+      <input type="number" id="amount" placeholder="Enter amount">
+      <select id="to-currency">
+        <option value="USD">USD - US Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="TL">Lira - Turk Lirasi</option>
+      </select>
+      <p id="exchange-result"></p>
+      <button>Convert</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
